@@ -1,0 +1,414 @@
+Mods: {
+	CatalystMod: {
+		Common: {
+			UnboundKey: "“你还没有绑定该热键”"
+			BoundKey: "'{0}'"
+		}
+
+		ItemName: {
+			AstrageldonBag: 宝藏胶囊
+			AstrageldonMask: 末世星史莱姆面具
+			InterstellarCorruptionDye: 星辉浊流染料
+			Astrageldon1MusicBox: 音乐盒（末世星史莱姆第一阶段）
+			Astrageldon2MusicBox: 音乐盒（末世星史莱姆第二阶段）
+			AstrageldonMenuMusicBox: 音乐盒《来自地狱的天堂之礼》
+			MetanovaOre: 辉恒星矿
+			MetanovaBar: 辉恒星锭
+			KnowledgeAstrageldon: "{$Mods.CatalystMod.NPCName.Astrageldon}"
+			AstralCommunicator: 星辉发讯器
+			IntergelacticHeadMelee: 异宇星凝坚盔
+			IntergelacticHeadRanged: 异宇星凝面甲
+			IntergelacticHeadMagic: 异宇星凝面具
+			IntergelacticHeadSummon: 异宇星凝角盔
+			IntergelacticHeadRogue: 异宇星凝头套
+			IntergelacticBreastplate: 异宇星凝胸甲
+			IntergelacticGreaves: 异宇星凝护胫
+			AstralsEnd: 星辉之终
+			Astragelgun: 星凝枪
+			InterstellarVolution: 凝旋星刃
+			ExaltedHorizon: 崇天宙影
+			AstralpodStaff: 星辉水母召唤杖
+			ScytheoftheAbandonedGod: 旧神星镰
+			AstralLash: 末星之鞭
+			AstrageldonTrophy: 末世星史莱姆纪念章
+			InfluxCluster: 凝涌星核
+			AstraJelly: 幻星凝露
+			Lean: 星辉可乐
+			AstralTransmogrifier: 星辉熔铸台
+			Astrogel: 辉星凝胶
+			MetanovaBrick: 辉恒星砖
+			NovaMonolith: 新星天柱
+			IntergelacticBathtub: 星凝浴缸
+			IntergelacticBed: 星凝床
+			IntergelacticBookshelf: 星凝书架
+			IntergelacticCandelabra: 星凝烛台
+			IntergelacticCandle: 星凝蜡烛
+			IntergelacticChair: 星凝椅子
+			IntergelacticChandelier: 星凝吊灯
+			IntergelacticClock: 星凝钟
+			IntergelacticLamp: 星凝灯
+			IntergelacticLantern: 星凝灯笼
+			IntergelacticPiano: 星凝钢琴
+			IntergelacticSink: 星凝水槽
+			IntergelacticSofa: 星凝沙发
+			IntergelacticTable: 星凝桌子
+			IntergelacticToilet: 星凝马桶
+			IntergelacticWorkbench: 星凝工作台
+			IntergelacticChest: 星凝宝箱
+			IntergelacticDoor: 星凝门
+			IntergelacticDresser: 星凝梳妆台
+			IntergelacticPlatform: 星凝平台
+			AscendedAstralSlimeBanner: 星极史莱姆旗帜
+			MetanovaSlimeBanner: 辉恒星史莱姆旗帜
+			DivineJello: 圣星美馔
+		}
+
+		ItemTooltip: {
+			AstrageldonBag: "{$CommonItemTooltip.RightClickToOpen}"
+			MetanovaBar: 它的内部有一整个压缩的宇宙
+			KnowledgeAstrageldon:
+				'''
+				一个由凝胶构成的奇点。
+				在觉醒的过程中，这个史莱姆已经吞噬了无数宇宙。现在，它来到了这里，只为继续它在宇宙间盲目的扩张。
+				过去你已轻松清除过类似的威胁。面对你的强大力量，这个生物即将迎接的未来和它们相差无几。
+				'''
+			AstralCommunicator:
+				'''
+				在星辉瘟疫使用，召唤末世星史莱姆
+				当幻月之神陨落时，它核心的辉星珠会碎裂
+				{$Mods.CatalystMod.Tooltips.NotConsumable}
+				'''
+			IntergelacticHeadMelee:
+				'''
+				增加22%近战伤害和近战暴击率
+				增加10%近战攻速和移动速度
+				增加15%伤害减免
+				'''
+			IntergelacticHeadRanged:
+				'''
+				增加14%远程伤害和暴击率
+				增加12%伤害减免
+				'''
+			IntergelacticHeadMagic:
+				'''
+				增加15%魔法伤害和魔法暴击率
+				增加100点最大魔力值
+				增加12%伤害减免
+				'''
+			IntergelacticHeadSummon:
+				'''
+				增加1个仆从栏位
+				增加12%伤害减免
+				'''
+			IntergelacticHeadRogue:
+				'''
+				增加22%盗贼伤害和盗贼暴击率
+				增加12%伤害减免
+				'''
+			IntergelacticBreastplate:
+				'''
+				使你免疫星辉瘟疫和某些降低防御力的减益
+				'''
+			IntergelacticGreaves:
+				'''
+				增加20%移动速度
+				提高跳跃速度，提高摔落伤害抗性
+				'''
+			AstralsEnd: 从平行宇宙召唤一颗强大的小行星
+			Astragelgun:
+				'''
+				发射出超新星炸弹，接触时发生爆炸
+				右键攻击发射出等离子球，造成200%伤害
+				{$ItemTooltip.Flamethrower}
+				50%几率不消耗凝胶
+				'''
+			InterstellarVolution:
+				'''
+				爆炸出追踪的新星史莱姆
+				潜伏攻击产生的史莱姆会发射激光
+				'''
+			ExaltedHorizon:
+				'''
+				射出一支追踪的长枪，击中敌怪时附加一层群星之蚀
+				叠加到五层时，敌怪会发生剧烈的宙影爆炸，造成巨量伤害
+				'''
+			AstralpodStaff: 召唤会发射激光和死亡射线的星辉水母来保护你
+			ScytheoftheAbandonedGod:
+				'''
+				旋转，同时召唤出几个追踪凝胶球。凝胶球会逐渐停下，最终释放出异界惊雷
+				右键攻击以向光标位置冲刺
+				'''
+			AstralLash:
+				'''
+				长度：40.000格
+				发射速度：50.00
+				回收速度：72.00
+				牵引速度：16.00
+				将你传送至钩爪的位置
+				你不会被阻挡在你和爪钩之间的方块挡住
+				'''
+			InfluxCluster: （疯狂）
+			AstraJelly: 增加最大魔力值和魔力恢复速度
+			Lean:
+				'''
+				增加最大魔力值
+				大大增加魔力恢复速度
+				“尝尝这宇宙碳酸！”
+				'''
+			AstralTransmogrifier: 用于合成特殊物品
+			Astrogel: 站在上面时大大增加跳跃高度
+			NovaMonolith: “包含少量异界星宇之力”
+			AscendedAstralSlimeBanner: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCName.AstrageldonSlime}"
+			MetanovaSlimeBanner: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCName.MetanovaSlime}"
+			DivineJello: 
+				'''
+				召唤史莱姆星灵
+				“适合神祇的甜点！”
+				'''
+
+			Extra: {
+			HideofAstrumDeus: 星辉凋亡减益造成的伤害降低50%
+			}
+		}
+
+		ItemTooltipExtra0: {
+			AstralCommunicator: 右键使用以召唤末世星史莱姆的第一阶段
+		}
+
+		ItemTooltipExtra1: {
+			AstralCommunicator: 月神陨落，核心损毁，星能逸散……
+		}
+
+		ArmorSetBonus: {
+			IntergelacticAll: 在你周围召唤两个由小行星组成的星环，你的伤害增幅越高，星环伤害越高
+			IntergelacticMelee:
+				'''
+				在你周围召唤四个由小行星组成星环，你的伤害增幅越高，星环伤害越高
+				使你免疫击退和某些影响移动的减益
+				使你免疫星辉凋亡，你的攻击会造成星辉凋亡
+				'''
+			IntergelacticRanged:
+				'''
+				远程武器会召唤出造成30%伤害的辉星
+				使你免疫星辉凋亡，你的攻击会造成星辉凋亡
+				'''
+			IntergelacticMagic:
+				'''
+				魔法暴击会生成辉星
+				魔力消耗减少20%
+				通过药水回复的魔力值额外增加100
+				使你免疫星辉凋亡，你的攻击会造成星辉凋亡
+				'''
+			IntergelacticSummon:
+				'''
+				增加3个仆从栏位
+				召唤物有6%几率造成暴击
+				召唤物周围会生成小行星，它们会丢出这些小行星进行攻击
+				使你免疫星辉凋亡，你的攻击会造成星辉凋亡
+				'''
+			IntergelacticRogue:
+				'''
+				潜伏攻击会释放小行星
+				使你免疫星辉凋亡，你的攻击会造成星辉凋亡
+				'''
+		}
+
+		ProjectileName: {
+			IntergelacticMinionOrbitingRocks: 星环屏障
+			AsteroidBuster: 星辉灾星
+			AsteroidBusterExplosion: 星辉灾星
+			NebulaSpear: 超空间长枪
+			Astralpod: 星辉水母
+			AstralpodBullet: 辐射光弹
+			PlayerNebula: 星云突击
+			AstrageldonStar: 凋亡辉星
+			AstrageldonStar2: 凋亡辉星
+			AstrageldonStar3: 凋亡辉星
+			AstrageldonStar4: 凋亡辉星
+			AstraRock: 凋亡之石
+			HostileAsteroid: 凋亡星环
+			NebulaResidue: 星云残骸
+			NebulaResidueHB: 星云残骸
+			SlimerSpear: 新星长矛
+			SpiralLaser: 凋亡漩涡
+			StarLaser: 凋亡之火
+			AstraBlade: 凋亡尖碑
+			AstrageldonLaser: 凋亡光束
+		}
+
+		AuricTeslaPlusSet: {
+			Melee:
+				'''
+				近战异宇星凝、血炎和弑神者的套装奖励
+				敌人更有可能以你为目标
+				弹幕击中敌人时生成圣金源光球治疗玩家
+				'''
+			Ranged:
+				'''
+				远程异宇星凝、血炎和弑神者的套装奖励
+				弹幕击中敌人时生成圣金源光球治疗玩家
+				'''
+			Magic:
+				'''
+				魔法异宇星凝、血炎和始源林海的套装奖励
+				弹幕击中敌人时生成圣金源光球治疗玩家
+				最大速度和加速度增加5%
+				'''
+			Summoner:
+				'''
+				召唤异宇星凝、血炎和始源林海的套装奖励
+				弹幕击中敌人时生成圣金源光球治疗玩家
+				最大速度和加速度增加5%
+				增加6个仆从栏位，提高75%召唤伤害
+				'''
+			Rogue:
+				'''
+				盗贼异宇星凝、血炎和弑神者的套装奖励
+				弹幕击中敌人时生成圣金源光球治疗玩家
+				不攻击时累积潜行值，移动时积累较慢，最大130点
+				一旦你的潜行值满，下一次盗贼攻击可施展潜伏攻击
+				盗贼潜行值只在攻击时下降，移动时不会下降
+				潜行值越高，你的移动速度和盗贼伤害、暴击率越高
+				'''
+		}
+
+		ItemTooltipExtra: {
+			InfluxCluster:
+				'''
+				按下{0}键，将自身化为暴烈星云，向光标冲刺
+				冲刺时，你免疫所有伤害
+				冷却时间为{1}秒
+				'''
+		}
+
+		Cooldowns: {
+			InfluxDash: 凝涌星核冷却
+		}
+
+		MapObject: {
+			AstralTransmogrifier: 星辉熔铸台
+			IntergelacticChest: 星凝宝箱
+			IntergelacticDoor: 星凝门
+			IntergelacticDresser: 星凝梳妆台
+			MusicBoxes: 音乐盒
+			BossTrophy: 纪念章
+			EnemyBanners: 旗帜
+		}
+
+		Containers: {
+			IntergelacticChest: 星凝宝箱
+			IntergelacticDresser: 星凝宝箱
+		}
+
+		BuffName: {
+			AstrogelJumpBoost: 辉星凝胶
+			AstrageldonRocksSetbonus: 星环屏障
+			AstralJellyBuff: 幻星凝露
+			ZeroGravity: 零重力
+			AstralpodBuff: 星辉水母
+			AstralBlight: 星辉凋亡
+			InterstellarCorruption: 群星之蚀
+			AstrageldonPetBuff: 史莱姆星灵
+		}
+
+		BuffDescription: {
+			AstrogelJumpBoost: 大大增加跳跃速度
+			AstrageldonRocksSetbonus: 一圈小行星保护着你
+			AstralJellyBuff: 增加最大魔力值和魔力恢复速度
+			ZeroGravity: 获得无限的飞行时间
+			AstralpodBuff: 星辉水母会保护你
+			AstralBlight: 你的血肉气化了
+			InterstellarCorruption:
+				'''
+				空间中的扭曲能量环绕在你周围
+				你获得混沌状态减益的瞬间便会化为齑粉
+				'''
+
+			AstrageldonPetBuff: 祂就是吞噬一切之物
+		}
+
+		CommonTooltip: {
+			HeatProtect: 在死亡模式下免疫高温
+			ColdProtect: 在死亡模式下免疫寒冷
+			HeatandColdProtect: 在死亡模式下免疫高温和寒冷
+		}
+
+		Tooltips: {
+			FlawlessDrop: - 无伤战利品 -
+			NotConsumable: 不消耗
+		}
+
+		Announcement: {
+			AstrageldonLocked: 末世星之奇点遗世而去……
+			AstralTreasures: 星辉洞穴中的宝藏发出了淡淡星光！
+			HasAwakened: "{0}已苏醒！"
+			AstrageldonKilledImproperly: 你触发了一个不常见的bug……重新召唤这个Boss并击败它，获取它的战利品吧！
+			Bug: 记得把bug报告给灾劫Mod开发组（或是汉化补丁作者），我们会修复它！
+		}
+
+		WorldGen: {
+			AstralSpread: 扩散星辉瘟疫……
+			AstralTreasures: 生成辉恒星矿……
+		}
+
+		ClientConfig: {
+			Name: 客户端设置
+			VisualsHeader: 视觉效果
+			MiscHeader: 杂项
+			SulphurousSeaCustomBG: 新的硫磺海背景
+			SulphurousSeaCustomBGTooltip: 开关本模组为硫磺海准备的新背景
+			TextSparkles: 文字闪烁
+			TextSparklesTooltip:
+				'''
+				开关某些特殊稀有度的文字闪烁效果。
+				开启后某些文本可能难以阅读。
+				'''
+		}
+
+		TitleIcon: {
+			Astrageldon: {
+				1: 你无法挑战末世星史莱姆
+				3: 你可以挑战末世星史莱姆
+				4: 你已击败末世星史莱姆
+			}
+		}
+
+		Bestiary: {
+			Astrageldon: 拥有神之力量、穿越在维度之间的史莱姆。作为星辉凋亡的前导，它在追求质量的过程中吸收了它原先的整个宇宙。
+			NovaSlime: 从末世星史莱姆身上分离出来的一小块碎片。新星史莱姆本身拥有巨大的能量，但它的质量不足以维持自身的稳定。
+			NovaSlimer: 一个高密度的星辉凝胶球，拥有耐用且锋利、足以撕裂维度的锋刃。当它们被高速发射时，现实都会被其撕裂。
+			AscendedAstralSlime: 由纯能量构成的星凝胶体，来自被一个具有神力的史莱姆毁灭的宇宙。它们的核心是一块带有共振辉星珠的外星石头。
+			MetanovaSlime: 末世星史莱姆的寂灭使星辉洞穴中充满了闪闪发光的外星岩石。辉恒星史莱姆吸收了这些石头的小碎片，构建出轻巧耐用的装甲。
+		}
+
+		NPCName: {
+			Astrageldon: 末世星史莱姆
+			NovaSlime: 新星史莱姆
+			NovaSlimer: 裂星史莱姆
+			AscendedAstralSlime: 星极史莱姆
+			MetanovaSlime: 辉恒星史莱姆
+			MetanovaSlimeRocks: 辉恒星史莱姆
+		}
+
+		BossChecklistDesc: {
+			Astrageldon: 在星辉瘟疫生物群落使用[i:{0}] 召唤
+		}
+
+
+		DropCondition: {
+			Flawless: 无伤击败后掉落
+		}
+
+		DeathMessage: {
+			InterstellarCorruption: 被空间裂缝吞噬了……
+		}
+
+		AstrageldonMainMenu: 末世星史莱姆风格
+		AstrageldonAntiCheat: 
+			'''
+			默认你是在无意中召唤出了末世星史莱姆。
+			请不要因此报告关于这个Boss本身和/或其战利品的任何的平衡问题。
+			除非你能证明你自己没啥问题，否则出现了这条信息的无伤挑战也算作失败。
+			'''
+	}
+}

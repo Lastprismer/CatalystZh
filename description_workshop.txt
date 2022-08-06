@@ -1,0 +1,17 @@
+This is a Chinese-translation patch for Catalyst Mod.
+
+-= 介绍 =-
+[b]目前控件中内容暂时无法翻译，请稍事等候。[/b]
+
+由于灾劫内置汉化和Mod本体版本错位，暂时制作这个补丁包。
+补丁包中所有更新的汉化内容将在灾劫下一个版本中加入。
+
+-= 使用方法 =-
+1.同时订阅灾厄Mod、灾劫Mod和本Mod
+2.进入tml，在模组管理中同时启用灾厄Mod、灾劫Mod和本Mod
+3.安装完成，进行游戏
+
+-= Credits 鸣谢 =-
+Catalyst Dev Team || 灾劫Mod制作组
+卡顿修复和其他技术支持：-Cyril-
+图标：陌林
