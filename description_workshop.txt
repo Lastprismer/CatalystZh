@@ -15,3 +15,5 @@ This is a Chinese-translation patch for Catalyst Mod.
 Catalyst Dev Team || 灾劫Mod制作组
 卡顿修复和其他技术支持：-Cyril-
 图标：陌林
+
+For the source code, check [url=https://github.com/Lastprismer/CatalystZh] here [/url].
