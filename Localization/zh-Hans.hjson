@@ -2,16 +2,16 @@ Mods: {
 	CatalystMod: {
 		Common: {
 			UnboundKey: "“你还没有绑定该热键”"
-			BoundKey: "'{0}'"
+			BoundKey: "“{0}”"
 		}
 
 		ItemName: {
-			AstrageldonBag: 宝藏胶囊
+			AstrageldonBag: 宝藏胶囊（{$Mods.CatalystMod.NPCName.Astrageldon}）
 			AstrageldonMask: 末世星史莱姆面具
 			InterstellarCorruptionDye: 星辉浊流染料
-			Astrageldon1MusicBox: 音乐盒（末世星史莱姆第一阶段）
-			Astrageldon2MusicBox: 音乐盒（末世星史莱姆第二阶段）
-			AstrageldonMenuMusicBox: 音乐盒《来自地狱的天堂之礼》
+			AstrageldonPhase1MusicBox: 音乐盒（末世星史莱姆第一阶段）
+			AstrageldonPhase2MusicBox: 音乐盒（末世星史莱姆第二阶段）
+			AstrageldonTitleMusicBox: 音乐盒（末世星史莱姆游戏主页）
 			MetanovaOre: 辉恒星矿
 			MetanovaBar: 辉恒星锭
 			KnowledgeAstrageldon: "{$Mods.CatalystMod.NPCName.Astrageldon}"
@@ -60,11 +60,16 @@ Mods: {
 			IntergelacticPlatform: 星凝平台
 			AscendedAstralSlimeBanner: 星极史莱姆旗帜
 			MetanovaSlimeBanner: 辉恒星史莱姆旗帜
+			AstralNeutron: 中子星辉
 			DivineJello: 圣星美馔
+			AstrageldonRelic: 末世星史莱姆圣物
 		}
 
 		ItemTooltip: {
 			AstrageldonBag: "{$CommonItemTooltip.RightClickToOpen}"
+			AstrageldonPhase1MusicBox: 《宙极之恶》，由 DM DOKURO 制作
+			AstrageldonPhase2MusicBox: 《天河荒溃》，由 Heart Plus Up! 制作
+			AstrageldonTitleMusicBox: 《来自地狱的天堂之礼》，由 DM DOKURO 制作
 			MetanovaBar: 它的内部有一整个压缩的宇宙
 			KnowledgeAstrageldon:
 				'''
@@ -120,11 +125,11 @@ Mods: {
 				发射出超新星炸弹，接触时发生爆炸
 				右键攻击发射出等离子球，造成200%伤害
 				{$ItemTooltip.Flamethrower}
-				50%几率不消耗凝胶
+				75%几率不消耗凝胶
 				'''
 			InterstellarVolution:
 				'''
-				爆炸出追踪的新星史莱姆
+				爆炸出追踪的裂星史莱姆
 				潜伏攻击产生的史莱姆会发射激光
 				'''
 			ExaltedHorizon:
@@ -153,19 +158,22 @@ Mods: {
 				'''
 				增加最大魔力值
 				大大增加魔力恢复速度
-				“尝尝这宇宙碳酸！”
+				“尝尝这宇宙碳酸饮料！”
 				'''
 			AstralTransmogrifier: 用于合成特殊物品
 			Astrogel: 站在上面时大大增加跳跃高度
 			NovaMonolith: “包含少量异界星宇之力”
 			AscendedAstralSlimeBanner: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCName.AstrageldonSlime}"
 			MetanovaSlimeBanner: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCName.MetanovaSlime}"
+			AstralNeutron: 
+				'''
+				作者：PokerFace
+				'''
 			DivineJello: 
 				'''
 				召唤史莱姆星灵
 				“适合神祇的甜点！”
 				'''
-
 			Extra: {
 			HideofAstrumDeus: 星辉凋亡减益造成的伤害降低50%
 			}
@@ -180,10 +188,15 @@ Mods: {
 		}
 
 		ArmorSetBonus: {
-			IntergelacticAll: 在你周围召唤两个由小行星组成的星环，你的伤害增幅越高，星环伤害越高
+			IntergelacticAll: 
+				'''
+				在你周围召唤两个由小行星组成的星环，你的伤害增幅越高，星环伤害越高
+				按下{0}键，可使星环透明化
+				'''
 			IntergelacticMelee:
 				'''
 				在你周围召唤四个由小行星组成星环，你的伤害增幅越高，星环伤害越高
+				按下{0}键，可使星环透明化
 				使你免疫击退和某些影响移动的减益
 				使你免疫星辉凋亡，你的攻击会造成星辉凋亡
 				'''
@@ -215,12 +228,12 @@ Mods: {
 
 		ProjectileName: {
 			IntergelacticMinionOrbitingRocks: 星环屏障
-			AsteroidBuster: 星辉灾星
+			AsteroidBusterProj: 星辉灾星
 			AsteroidBusterExplosion: 星辉灾星
 			NebulaSpear: 超空间长枪
 			Astralpod: 星辉水母
 			AstralpodBullet: 辐射光弹
-			PlayerNebula: 星云突击
+			PlayerNebula: 暴烈星云
 			AstrageldonStar: 凋亡辉星
 			AstrageldonStar2: 凋亡辉星
 			AstrageldonStar3: 凋亡辉星
@@ -234,6 +247,7 @@ Mods: {
 			StarLaser: 凋亡之火
 			AstraBlade: 凋亡尖碑
 			AstrageldonLaser: 凋亡光束
+			AstrageldonFlamethrower: 凋亡之焱
 		}
 
 		AuricTeslaPlusSet: {
@@ -293,11 +307,12 @@ Mods: {
 			MusicBoxes: 音乐盒
 			BossTrophy: 纪念章
 			EnemyBanners: 旗帜
+			AstralNeutronPlaced: 中子星辉
 		}
 
 		Containers: {
 			IntergelacticChest: 星凝宝箱
-			IntergelacticDresser: 星凝宝箱
+			IntergelacticDresser: 星凝梳妆台
 		}
 
 		BuffName: {
@@ -336,6 +351,7 @@ Mods: {
 		Tooltips: {
 			FlawlessDrop: - 无伤战利品 -
 			NotConsumable: 不消耗
+			ClentaminatorSolution: 由环境改造枪使用
 		}
 
 		Announcement: {
@@ -406,9 +422,10 @@ Mods: {
 		AstrageldonMainMenu: 末世星史莱姆风格
 		AstrageldonAntiCheat: 
 			'''
-			默认你是在无意中召唤出了末世星史莱姆。
-			请不要因此报告关于这个Boss本身和/或其战利品的任何的平衡问题。
-			除非你能证明你自己没啥问题，否则出现了这条信息的无伤挑战也算作失败。
+			默认你是无意的
+			你都这么玩了，别找我们吐槽平衡性问题了
+			打无伤也别这么召唤
 			'''
+		## BCL: 来自平行宇宙的骇宇巨物继续着它吞噬万物的征途
 	}
 }
