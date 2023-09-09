@@ -1,10 +1,8 @@
-这是灾劫Mod的一个汉化补丁。
-This is a Chinese-translation patch for Catalyst Mod.
+这是灾劫Mod的一个中文辅助补丁。
+This is a Chinese-translation fix mod for Catalyst Mod.
 
 -= 介绍 =-
-由于灾劫内置汉化和Mod本体版本错位，暂时制作这个补丁包。
-补丁包中所有更新的汉化内容将在灾劫下一个版本中加入。
-附属额外功能：修复末世星史莱姆第二阶段的卡顿问题。
+由于灾劫mod在中文方面适配不完善，制作此mod来进行一些优化和修复
 
 -= 使用方法 =-
 1.同时订阅灾厄Mod、灾劫Mod和本Mod
@@ -12,8 +10,7 @@ This is a Chinese-translation patch for Catalyst Mod.
 3.安装完成，进行游戏
 
 -= Credits 鸣谢 =-
-Catalyst Dev Team || 灾劫Mod制作组
-卡顿修复及许多技术支持：-Cyril-
+技术支持：-Cyril-
 图标：陌林
 
-For the source code, check https://github.com/Lastprismer/CatalystZh
+源码请参见 https://github.com/Lastprismer/CatalystZh

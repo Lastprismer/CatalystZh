@@ -1,194 +1,673 @@
 Mods: {
 	CatalystMod: {
 		Common: {
-			UnboundKey: "“你还没有绑定该热键”"
-			BoundKey: "“{0}”"
+			UnboundKey: “未绑定”
+			BoundKey: “{0}”
+			Infinite: Mods.CatalystMod.Common.Infinite
+			InfiniteSign: Mods.CatalystMod.Common.InfiniteSign
 		}
 
-		ItemName: {
-			AstrageldonBag: 宝藏胶囊（{$Mods.CatalystMod.NPCName.Astrageldon}）
-			AstrageldonMask: 末世星史莱姆面具
-			InterstellarCorruptionDye: 星辉浊流染料
-			AstrageldonPhase1MusicBox: 音乐盒（末世星史莱姆第一阶段）
-			AstrageldonPhase2MusicBox: 音乐盒（末世星史莱姆第二阶段）
-			AstrageldonTitleMusicBox: 音乐盒（末世星史莱姆游戏主页）
-			MetanovaOre: 辉恒星矿
-			MetanovaBar: 辉恒星锭
-			KnowledgeAstrageldon: "{$Mods.CatalystMod.NPCName.Astrageldon}"
-			AstralCommunicator: 星辉发讯器
-			IntergelacticHeadMelee: 异宇星凝坚盔
-			IntergelacticHeadRanged: 异宇星凝面甲
-			IntergelacticHeadMagic: 异宇星凝面具
-			IntergelacticHeadSummon: 异宇星凝角盔
-			IntergelacticHeadRogue: 异宇星凝头套
-			IntergelacticBreastplate: 异宇星凝胸甲
-			IntergelacticGreaves: 异宇星凝护胫
-			AstralsEnd: 星辉之终
-			Astragelgun: 星凝枪
-			InterstellarVolution: 凝旋星刃
-			ExaltedHorizon: 崇天宙影
-			AstralpodStaff: 星辉水母召唤杖
-			ScytheoftheAbandonedGod: 旧神星镰
-			AstralLash: 末星之鞭
-			AstrageldonTrophy: 末世星史莱姆纪念章
-			InfluxCluster: 凝涌星核
-			AstraJelly: 幻星凝露
-			Lean: 星辉可乐
-			AstralTransmogrifier: 星辉熔铸台
-			Astrogel: 辉星凝胶
-			MetanovaBrick: 辉恒星砖
-			NovaMonolith: 新星天柱
-			IntergelacticBathtub: 星凝浴缸
-			IntergelacticBed: 星凝床
-			IntergelacticBookshelf: 星凝书架
-			IntergelacticCandelabra: 星凝烛台
-			IntergelacticCandle: 星凝蜡烛
-			IntergelacticChair: 星凝椅子
-			IntergelacticChandelier: 星凝吊灯
-			IntergelacticClock: 星凝钟
-			IntergelacticLamp: 星凝灯
-			IntergelacticLantern: 星凝灯笼
-			IntergelacticPiano: 星凝钢琴
-			IntergelacticSink: 星凝水槽
-			IntergelacticSofa: 星凝沙发
-			IntergelacticTable: 星凝桌子
-			IntergelacticToilet: 星凝马桶
-			IntergelacticWorkbench: 星凝工作台
-			IntergelacticChest: 星凝宝箱
-			IntergelacticDoor: 星凝门
-			IntergelacticDresser: 星凝梳妆台
-			IntergelacticPlatform: 星凝平台
-			AscendedAstralSlimeBanner: 星极史莱姆旗帜
-			MetanovaSlimeBanner: 辉恒星史莱姆旗帜
-			AstralNeutron: 中子星辉
-			DivineJello: 圣星美馔
-			AstrageldonRelic: 末世星史莱姆圣物
-		}
+		Items: {
+			Lore: {
+				LoreAstrageldon: {
+					Lore:
+						'''
+						这样的存在让人无法理解。 嘉登曾在他对星辉瘟疫的调查中报告过这种异常的力量。 
+						纵使才华横溢，他也无法洞彻其独特的星辉凝胶本质。 
+						他确实发现该实体已被更为强大的星辉瘟疫菌株污染。 
+						它的绝对密度无法估量，远远超出了理性可认知的范围。 不仅如此，它奇怪的粘性无论如何都解释不通。 
+						如果它真的是个史莱姆的话，那么它具有的吞噬万物的能力将成为它无尽野心的推手。 正是这种瘟疫的理想宿主。 
+						它的饥饿感是无法满足的。 无法控制，野性难训。 自然秩序的完美体现。 
+						光是这实体拥有的这种潜力，也会令贪婪的史莱姆之神羡慕不已吧。 
+						噬界之力不复存在，我们只能猜测这惊人之举背后的恐怖威胁。 
+						'''
+					DisplayName: 末世星史莱姆
+				}
+			}
 
-		ItemTooltip: {
-			AstrageldonBag: "{$CommonItemTooltip.RightClickToOpen}"
-			AstrageldonPhase1MusicBox: 《宙极之恶》，由 DM DOKURO 制作
-			AstrageldonPhase2MusicBox: 《天河荒溃》，由 Heart Plus Up! 制作
-			AstrageldonTitleMusicBox: 《来自地狱的天堂之礼》，由 DM DOKURO 制作
-			MetanovaBar: 它的内部有一整个压缩的宇宙
-			KnowledgeAstrageldon:
-				'''
-				一个由凝胶构成的奇点。
-				在觉醒的过程中，这个史莱姆已经吞噬了无数宇宙。现在，它来到了这里，只为继续它在宇宙间盲目的扩张。
-				过去你已轻松清除过类似的威胁。面对你的强大力量，这个生物即将迎接的未来和它们相差无几。
-				'''
-			AstralCommunicator:
-				'''
-				在星辉瘟疫使用，召唤末世星史莱姆
-				当幻月之神陨落时，它核心的辉星珠会碎裂
-				{$Mods.CatalystMod.Tooltips.NotConsumable}
-				'''
-			IntergelacticHeadMelee:
-				'''
-				增加22%近战伤害和近战暴击率
-				增加10%近战攻速和移动速度
-				增加15%伤害减免
-				'''
-			IntergelacticHeadRanged:
-				'''
-				增加14%远程伤害和暴击率
-				增加12%伤害减免
-				'''
-			IntergelacticHeadMagic:
-				'''
-				增加15%魔法伤害和魔法暴击率
-				增加100点最大魔力值
-				增加12%伤害减免
-				'''
-			IntergelacticHeadSummon:
-				'''
-				增加1个仆从栏位
-				增加12%伤害减免
-				'''
-			IntergelacticHeadRogue:
-				'''
-				增加22%盗贼伤害和盗贼暴击率
-				增加12%伤害减免
-				'''
-			IntergelacticBreastplate:
-				'''
-				使你免疫星辉瘟疫和某些降低防御力的减益
-				'''
-			IntergelacticGreaves:
-				'''
-				增加20%移动速度
-				提高跳跃速度，提高摔落伤害抗性
-				'''
-			AstralsEnd: 从平行宇宙召唤一颗强大的小行星
-			Astragelgun:
-				'''
-				发射出超新星炸弹，接触时发生爆炸
-				右键攻击发射出等离子球，造成200%伤害
-				{$ItemTooltip.Flamethrower}
-				75%几率不消耗凝胶
-				'''
-			InterstellarVolution:
-				'''
-				爆炸出追踪的裂星史莱姆
-				潜伏攻击产生的史莱姆会发射激光
-				'''
-			ExaltedHorizon:
-				'''
-				射出一支追踪的长枪，击中敌怪时附加一层群星之蚀
-				叠加到五层时，敌怪会发生剧烈的宙影爆炸，造成巨量伤害
-				'''
-			AstralpodStaff: 召唤会发射激光和死亡射线的星辉水母来保护你
-			ScytheoftheAbandonedGod:
-				'''
-				旋转，同时召唤出几个追踪凝胶球。凝胶球会逐渐停下，最终释放出异界惊雷
-				右键攻击以向光标位置冲刺
-				'''
-			AstralLash:
-				'''
-				长度：40.000格
-				发射速度：50.00
-				回收速度：72.00
-				牵引速度：16.00
-				将你传送至钩爪的位置
-				你不会被阻挡在你和爪钩之间的方块挡住
-				'''
-			InfluxCluster: （疯狂）
-			AstraJelly: 增加最大魔力值和魔力恢复速度
-			Lean:
-				'''
-				增加最大魔力值
-				大大增加魔力恢复速度
-				“尝尝这宇宙碳酸饮料！”
-				'''
-			AstralTransmogrifier: 用于合成特殊物品
-			Astrogel: 站在上面时大大增加跳跃高度
-			NovaMonolith: “包含少量异界星宇之力”
-			AscendedAstralSlimeBanner: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCName.AstrageldonSlime}"
-			MetanovaSlimeBanner: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCName.MetanovaSlime}"
-			AstralNeutron: 
-				'''
-				作者：PokerFace
-				'''
-			DivineJello: 
-				'''
-				召唤史莱姆星灵
-				“适合神祇的甜点！”
-				'''
-			Extra: {
-			HideofAstrumDeus: 星辉凋亡减益造成的伤害降低50%
+			AstrageldonBag: {
+				DisplayName: 宝藏胶囊（{$Mods.CatalystMod.NPCs.Astrageldon.DisplayName}）
+				Tooltip: "{$CommonItemTooltip.RightClickToOpen}"
+			}
+
+			AstrageldonMask: {
+				DisplayName: 末世星史莱姆面具
+				Tooltip: ""
+			}
+
+			InterstellarCorruptionDye: {
+				DisplayName: 星辉浊流染料
+				Tooltip: ""
+			}
+
+			AstrageldonPhase1MusicBox: {
+				DisplayName: 音乐盒（末世星史莱姆第一阶段）
+				Tooltip: 《宙极之恶》，由 DM DOKURO 创作
+			}
+
+			AstrageldonPhase2MusicBox: {
+				DisplayName: 音乐盒（末世星史莱姆第二阶段）
+				Tooltip: 《天河荒溃》，由 Heart Plus Up! 创作
+			}
+
+			AstrageldonTitleMusicBox: {
+				DisplayName: 音乐盒（末世星史莱姆游戏主页）
+				Tooltip: 《来自地狱的天堂之礼》，由 DM DOKURO 创作
+			}
+
+			MetanovaOre: {
+				DisplayName: 辉恒星矿
+				Tooltip: ""
+			}
+
+			MetanovaBar: {
+				DisplayName: 辉恒星锭
+				Tooltip: 它的内部有一整个压缩的宇宙
+			}
+
+			LoreAstrageldon: {
+				DisplayName: "{$Mods.CatalystMod.NPCs.Astrageldon.DisplayName}"
+				Tooltip:
+					'''
+					[c/e3af40:寄宿其上的低语流入你的耳中……]
+					[c/bebebe:长按“左Shift”键以仔细聆听]
+					'''
+			}
+
+			AstralCommunicator: {
+				DisplayName: 星辉发讯器
+				Tooltip:
+					'''
+					在星辉瘟疫使用，召唤末世星史莱姆
+					[c/5c0000:当幻月之神陨落时，它核心的辉星珠会碎裂]
+					{$Mods.CatalystMod.Tooltips.NotConsumable}
+					'''
+			}
+
+			IntergelacticHeadMelee: {
+				DisplayName: 异宇星凝坚盔
+				Tooltip:
+					'''
+					增加22%近战伤害和近战暴击率
+					增加10%近战攻速和移动速度
+					增加15%伤害减免
+					'''
+			}
+
+			IntergelacticHeadRanged: {
+				DisplayName: 异宇星凝面甲
+				Tooltip:
+					'''
+					增加14%远程伤害和暴击率
+					增加12%伤害减免
+					'''
+			}
+
+			IntergelacticHeadMagic: {
+				DisplayName: 异宇星凝面具
+				Tooltip:
+					'''
+					增加100点最大魔力值
+					增加15%魔法伤害和魔法暴击率
+					增加12%伤害减免
+					'''
+			}
+
+			IntergelacticHeadSummon: {
+				DisplayName: 异宇星凝角盔
+				Tooltip:
+					'''
+					增加1个仆从栏位
+					增加12%伤害减免
+					'''
+			}
+
+			IntergelacticHeadRogue: {
+				DisplayName: 异宇星凝头套
+				Tooltip:
+					'''
+					增加22%盗贼伤害和盗贼暴击率
+					增加12%伤害减免
+					'''
+			}
+
+			IntergelacticBreastplate: {
+				DisplayName: 异宇星凝胸甲
+				Tooltip: 使你免疫星辉瘟疫和某些降低防御力的减益
+			}
+
+			IntergelacticGreaves: {
+				DisplayName: 异宇星凝护胫
+				Tooltip:
+					'''
+					增加20%移动速度
+					提高跳跃速度，提高摔落伤害抗性
+					'''
+			}
+
+			AstralsEnd: {
+				DisplayName: 星辉之终
+				Tooltip: 降下来自平行宇宙的小行星和行星碎片
+			}
+
+			Astragelgun: {
+				DisplayName: 星凝枪
+				Tooltip:
+					'''
+					发射出超新星炸弹，接触时发生爆炸
+					右键攻击发射出等离子球，造成200%伤害
+					{$Mods.CatalystMod.Tooltips.Flamethrower}
+					75%几率省下凝胶
+					'''
+			}
+
+			InterstellarVolution: {
+				DisplayName: 凝旋星刃
+				Tooltip:
+					'''
+					爆炸出追踪的裂星史莱姆
+					潜伏攻击产生的史莱姆会发射激光
+					'''
+			}
+
+			ExaltedHorizon: {
+				DisplayName: 崇天宙影
+				Tooltip:
+					'''
+					射出一支追踪的长枪，击中敌怪时附加一层群星之蚀
+					叠加到五层时，敌怪会发生剧烈的宙影爆炸，造成巨量伤害
+					'''
+			}
+
+			AstralpodStaff: {
+				DisplayName: 星辉水母召唤杖
+				Tooltip: 召唤会发射激光和死亡射线的星辉水母来保护你
+			}
+
+			ScytheoftheAbandonedGod: {
+				DisplayName: 旧神星镰
+				Tooltip:
+					'''
+					旋转，同时召唤出几个追踪凝胶球。 凝胶球会逐渐停下，最终释放出异界惊雷
+					右键攻击以向光标位置冲刺
+					{$Mods.CatalystMod.Tooltips.FlawlessDrop}
+					'''
+			}
+
+			AstralLash: {
+				DisplayName: 末星之鞭
+				Tooltip:
+					'''
+					长度：40.000格
+					发射速度：50.00
+					回收速度：72.00
+					牵引速度：16.00
+					将你传送至钩爪的位置
+					你不会被阻挡在你和爪钩之间的方块挡住
+					'''
+			}
+
+			AstrageldonTrophy: {
+				DisplayName: 末世星史莱姆纪念章
+				Tooltip: ""
+			}
+
+			InfluxCluster: {
+				DisplayName: 凝涌星核
+				Tooltip: （疯狂）
+			}
+
+			AstraJelly: {
+				DisplayName: 幻星凝露
+				Tooltip: 增加最大魔力值和魔力恢复速度
+			}
+
+			Lean: {
+				DisplayName: 星辉可乐
+				Tooltip:
+					'''
+					增加最大魔力值
+					大大增加魔力恢复速度
+					“尝尝这宇宙碳酸！”
+					'''
+			}
+
+			AstralTransmogrifier: {
+				DisplayName: 星辉熔铸台
+				Tooltip:
+					'''
+					用于合成特殊物品
+					算作固化机和静电精炼机
+					'''
+			}
+
+			Astrogel: {
+				DisplayName: 辉星凝胶
+				Tooltip: 站在上面时大大增加跳跃高度
+			}
+
+			MetanovaBrick: {
+				DisplayName: 辉恒星砖
+				Tooltip: ""
+			}
+
+			NovaMonolith: {
+				DisplayName: 新星天柱
+				Tooltip: “包含少量异界星宇之力”
+			}
+
+			IntergelacticBathtub: {
+				DisplayName: 星凝浴缸
+				Tooltip: ""
+			}
+
+			IntergelacticBed: {
+				DisplayName: 星凝床
+				// Tooltip: ""
+			}
+
+			IntergelacticBookshelf: {
+				DisplayName: 星凝书架
+				// Tooltip: ""
+			}
+
+			IntergelacticCandelabra: {
+				DisplayName: 星凝烛台
+				// Tooltip: ""
+			}
+
+			IntergelacticCandle: {
+				DisplayName: 星凝蜡烛
+				// Tooltip: ""
+			}
+
+			IntergelacticChair: {
+				DisplayName: 星凝椅子
+				// Tooltip: ""
+			}
+
+			IntergelacticChandelier: {
+				DisplayName: 星凝吊灯
+				// Tooltip: ""
+			}
+
+			IntergelacticClock: {
+				DisplayName: 星凝钟
+				// Tooltip: ""
+			}
+
+			IntergelacticLamp: {
+				DisplayName: 星凝灯
+				// Tooltip: ""
+			}
+
+			IntergelacticLantern: {
+				DisplayName: 星凝灯笼
+				// Tooltip: ""
+			}
+
+			IntergelacticPiano: {
+				DisplayName: 星凝钢琴
+				// Tooltip: ""
+			}
+
+			IntergelacticSink: {
+				DisplayName: 星凝水槽
+				// Tooltip: ""
+			}
+
+			IntergelacticSofa: {
+				DisplayName: 星凝沙发
+				// Tooltip: ""
+			}
+
+			IntergelacticTable: {
+				DisplayName: 星凝桌子
+				// Tooltip: ""
+			}
+
+			IntergelacticToilet: {
+				DisplayName: 星凝马桶
+				// Tooltip: ""
+			}
+
+			IntergelacticWorkbench: {
+				DisplayName: 星凝工作台
+				// Tooltip: ""
+			}
+
+			IntergelacticChest: {
+				DisplayName: 星凝宝箱
+				// Tooltip: ""
+			}
+
+			IntergelacticDoor: {
+				DisplayName: 星凝门
+				// Tooltip: ""
+			}
+
+			IntergelacticDresser: {
+				DisplayName: 星凝梳妆台
+				// Tooltip: ""
+			}
+
+			IntergelacticPlatform: {
+				DisplayName: 星凝平台
+				// Tooltip: ""
+			}
+
+			AscendedAstralSlimeBanner: {
+				DisplayName: "{$Mods.CatalystMod.NPCs.AscendedAstralSlime.DisplayName}旗帜"
+				Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCs.AscendedAstralSlime.DisplayName}"
+			}
+
+			MetanovaSlimeBanner: {
+				DisplayName: "{$Mods.CatalystMod.NPCs.MetanovaSlime.DisplayName}旗帜"
+				Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCs.MetanovaSlime.DisplayName}"
+			}
+
+			DivineJello: {
+				DisplayName: 圣星美馔
+				Tooltip:
+					'''
+					召唤史莱姆星灵
+					“适合神祇的甜点！”
+					'''
+			}
+
+			AstrageldonRelic: {
+				DisplayName: 末世星史莱姆圣物
+				// Tooltip: ""
+			}
+
+			BreathofGlacies: {
+				DisplayName: 冰川之息
+				Tooltip:
+					'''
+					每五次攻击，发射出一个符文圆环
+					符文会发射出造成50%伤害的冰砾
+					{$Mods.CatalystMod.Tooltips.Flamethrower}
+					50%几率省下凝胶
+					'''
+			}
+
+			DesertScorcher: {
+				DisplayName: 荒漠之灼
+				Tooltip:
+					'''
+					发射出一串灼热的水滴
+					无视至多5点防御力
+					{$Mods.CatalystMod.Tooltips.Flamethrower}
+					40%几率省下凝胶
+					'''
+			}
+
+			Ichorthrower: {
+				DisplayName: 灵液发射器
+				Tooltip:
+					'''
+					将凝胶点燃后喷射出燃烧的瘴气
+					瘴气有几率击中敌人后有几率凝结成灵液球
+					{$Mods.CatalystMod.Tooltips.Flamethrower}
+					40%几率省下凝胶
+					'''
+			}
+
+			Plasmilegion: {
+				DisplayName: 等离子集束焰
+				Tooltip:
+					'''
+					将凝胶电离为纯净的等离子体
+					按下左键可充能并发射出强大的等离子束，但有可能使武器过热
+					右键攻击会发射出等离子火球，不会使武器过热
+					{$Mods.CatalystMod.Tooltips.Flamethrower}
+					40%几率省下凝胶
+					'''
+			}
+
+			Repentance: {
+				DisplayName: 忏悔
+				Tooltip:
+					'''
+					从第六层地狱降下焚焰之刑
+					{$Mods.CatalystMod.Tooltips.Flamethrower}
+					70%几率省下凝胶
+					'''
+			}
+
+			RookOfVengeance: {
+				DisplayName: 无序堡垒
+				Tooltip:
+					'''
+					发射出击中敌人时会分裂出十字火焰的火球
+					{$Mods.CatalystMod.Tooltips.Flamethrower}
+					70%几率省下凝胶
+					'''
+			}
+
+			StaticInferno: {
+				DisplayName: 赤电炎风
+				Tooltip:
+					'''
+					发射出三个赤红电球，电球会化为等离子焰
+					{$Mods.CatalystMod.Tooltips.Flamethrower}
+					50%几率省下凝胶
+					'''
+			}
+
+			AstralNeutron: {
+				DisplayName: 中子星辉
+				Tooltip: 作者：PokerFace
+			}
+
+			CongeledDuoWhip: {
+				DisplayName: 胶联双鞭
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.WhipTooltip}
+					增加5%召唤标记伤害
+					左键攻击将同时甩出两条鞭子
+					右键攻击将第二条鞭子从身后甩出
+					'''
+			}
+
+			PrismBreak: {
+				DisplayName: 碎晶鞭
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.WhipTooltip}
+					被召唤物击中的敌人会释放出追踪的海晶碎片
+					'''
+			}
+
+			ResonantStriker: {
+				DisplayName: 谐鸣振爆索
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.WhipTooltip}
+					击中敌人时释放出追踪电球
+					召唤物攻击非Boss敌人时会使其晕眩
+					'''
+			}
+
+			UnderBite: {
+				DisplayName: 伏蛰
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.WhipTooltip}
+					投出酸腐之颅，酸腐之颅会造成酸性毒液减益，并增加6%召唤标记伤害
+					'''
+			}
+
+			UnrelentingTorment: {
+				DisplayName: 恒怨之刑
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.WhipTooltip}
+					释放出一连串异世鬼爪撕裂敌人
+					'''
+			}
+
+			BlossomsBlessing: {
+				DisplayName: 芳簇之祝
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.WhipTooltip}
+					送叶携花
+					触摸最大的花瓣后你会获得祝福，提高生命恢复、攻击力并获得荆棘效果
+					“花而后荣，枯而垂落。”
+					'''
+			}
+
+			Catharsis: {
+				DisplayName: 宣泄
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.WhipTooltip}
+					挥鞭会消耗你的生命值
+					击中敌人时获得鲜血充能，至多能维持20层充能
+					右键以消耗充能，暂时强化武器，同时恢复失去的生命值
+					[c/c61b40:被痛苦遗弃、吞噬的净化之光，]
+					[c/c61b40:化作毁灭之影，重返这个世界]
+					'''
+			}
+
+			SandstoneReigns: {
+				DisplayName: 怒砂暴君
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.WhipTooltip}
+					召唤物击中被鞭打的敌人后会出现一只小沙鲨，它会追咬你的敌人
+					“鲨鲨，可爱捏！”
+					'''
+			}
+
+			CoralCrusher: {
+				DisplayName: 珊瑚粉碎者
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.WhipTooltip}
+					鞭梢的珊瑚碎片会嵌入击中的敌人
+					召唤物的攻击可以击碎珊瑚碎片，使其停止移动并增加6%召唤标记伤害
+					'''
+			}
+
+			WulfrumSatchelCharge: {
+				DisplayName: 钨钢炸药包
+				Tooltip:
+					'''
+					潜伏攻击命中会摧毁大量方块
+					“危险勿近”
+					'''
+			}
+
+			WulfrumFlashlight: {
+				DisplayName: 钨钢手电筒
+				Tooltip:
+					'''
+					“照明技术的伟大革命”
+					左键开启手电筒，双击切换你背包中的不同透镜，右键双击关闭手电筒
+					'''
+			}
+
+			AmethystFlashlightLens: {
+				DisplayName: 紫晶手电筒透镜
+				Tooltip: "{$Mods.CatalystMod.Tooltips.LensTooltip}"
+			}
+
+			TopazFlashlightLens: {
+				DisplayName: 黄玉手电筒透镜
+				Tooltip: "{$Mods.CatalystMod.Tooltips.LensTooltip}"
+			}
+
+			SapphireFlashlightLens: {
+				DisplayName: 蓝玉手电筒透镜
+				Tooltip: "{$Mods.CatalystMod.Tooltips.LensTooltip}"
+			}
+
+			EmeraldFlashlightLens: {
+				DisplayName: 翡翠手电筒透镜
+				Tooltip: "{$Mods.CatalystMod.Tooltips.LensTooltip}"
+			}
+
+			RubyFlashlightLens: {
+				DisplayName: 红玉手电筒透镜
+				Tooltip: "{$Mods.CatalystMod.Tooltips.LensTooltip}"
+			}
+
+			DiamondFlashlightLens: {
+				DisplayName: 钻石手电筒透镜
+				Tooltip: "{$Mods.CatalystMod.Tooltips.LensTooltip}"
+			}
+
+			AmberFlashlightLens: {
+				DisplayName: 琥珀手电筒透镜
+				Tooltip: "{$Mods.CatalystMod.Tooltips.LensTooltip}"
+			}
+
+			TeamFlashlightLens: {
+				DisplayName: 团队手电筒透镜
+				Tooltip:
+					'''
+					{$Mods.CatalystMod.Tooltips.LensTooltip}
+					其颜色由你所在的队伍颜色决定
+					'''
+			}
+
+			Astrageldon1MusicBox.DisplayName: Mods.CatalystMod.ItemName.Astrageldon1MusicBox
+			Astrageldon2MusicBox.DisplayName: Mods.CatalystMod.ItemName.Astrageldon2MusicBox
+
+			KnowledgeAstrageldon: {
+				DisplayName: Mods.CatalystMod.ItemName.KnowledgeAstrageldon
+				Tooltip: Mods.CatalystMod.ItemTooltip.KnowledgeAstrageldon
+			}
+
+			IntergelacticHardhat: {
+				DisplayName: Mods.CatalystMod.ItemName.IntergelacticHardhat
+				Tooltip: Mods.CatalystMod.ItemTooltip.IntergelacticHardhat
+			}
+
+			IntergelacticVisor: {
+				DisplayName: Mods.CatalystMod.ItemName.IntergelacticVisor
+				Tooltip: Mods.CatalystMod.ItemTooltip.IntergelacticVisor
+			}
+
+			IntergelacticMask: {
+				DisplayName: Mods.CatalystMod.ItemName.IntergelacticMask
+				Tooltip: Mods.CatalystMod.ItemTooltip.IntergelacticMask
+			}
+
+			IntergelacticHornedHelmet.DisplayName: Mods.CatalystMod.ItemName.IntergelacticHornedHelmet
+
+			IntergelacticHeadgear: {
+				DisplayName: Mods.CatalystMod.ItemName.IntergelacticHeadgear
+				Tooltip: Mods.CatalystMod.ItemTooltip.IntergelacticHeadgear
+			}
+
+			AstragelHook: {
+				DisplayName: Mods.CatalystMod.ItemName.AstragelHook
+				Tooltip: Mods.CatalystMod.ItemTooltip.AstragelHook
+			}
+
+			AstrageldonMenuMusicBox.DisplayName: Mods.CatalystMod.ItemName.AstrageldonMenuMusicBox
+
+			WulfrumMineBanner: {
+				DisplayName: "{$Mods.CatalystMod.NPCs.WulfrumMine.DisplayName}旗帜"
+				Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCs.WulfrumMine.DisplayName}"
+			}
+
+			WulfrumSlimeBanner: {
+				DisplayName: "{$Mods.CatalystMod.NPCs.WulfrumSlime.DisplayName}旗帜"
+				Tooltip: "{$CommonItemTooltip.BannerBonus}{$Mods.CatalystMod.NPCs.WulfrumSlime.DisplayName}"
 			}
 		}
 
-		ItemTooltipExtra0: {
-			AstralCommunicator: 右键使用以召唤末世星史莱姆的第一阶段
-		}
-
-		ItemTooltipExtra1: {
-			AstralCommunicator: 月神陨落，核心损毁，星能逸散……
-		}
+		ItemTooltip.Extra.HideofAstrumDeus: 星辉凋亡减益造成的伤害降低50%
+		ItemTooltipExtra0.AstralCommunicator: 右键使用以召唤末世星史莱姆的第一阶段
+		ItemTooltipExtra1.AstralCommunicator: 月神陨落，核心损毁，星能逸散……
 
 		ArmorSetBonus: {
-			IntergelacticAll: 
+			IntergelacticAll:
 				'''
 				在你周围召唤两个由小行星组成的星环，你的伤害增幅越高，星环伤害越高
 				按下{0}键，可使星环透明化
@@ -196,7 +675,6 @@ Mods: {
 			IntergelacticMelee:
 				'''
 				在你周围召唤四个由小行星组成星环，你的伤害增幅越高，星环伤害越高
-				按下{0}键，可使星环透明化
 				使你免疫击退和某些影响移动的减益
 				使你免疫星辉凋亡，你的攻击会造成星辉凋亡
 				'''
@@ -221,56 +699,155 @@ Mods: {
 				'''
 			IntergelacticRogue:
 				'''
-				潜伏攻击会释放小行星
+				增加120点最大潜行值
+				潜伏攻击会释放小行星攻击敌人
 				使你免疫星辉凋亡，你的攻击会造成星辉凋亡
 				'''
 		}
 
-		ProjectileName: {
-			IntergelacticMinionOrbitingRocks: 星环屏障
-			AsteroidBusterProj: 星辉灾星
-			AsteroidBusterExplosion: 星辉灾星
-			NebulaSpear: 超空间长枪
-			Astralpod: 星辉水母
-			AstralpodBullet: 辐射光弹
-			PlayerNebula: 暴烈星云
-			AstrageldonStar: 凋亡辉星
-			AstrageldonStar2: 凋亡辉星
-			AstrageldonStar3: 凋亡辉星
-			AstrageldonStar4: 凋亡辉星
-			AstraRock: 凋亡之石
-			HostileAsteroid: 凋亡星环
-			NebulaResidue: 星云残骸
-			NebulaResidueHB: 星云残骸
-			SlimerSpear: 新星长矛
-			SpiralLaser: 凋亡漩涡
-			StarLaser: 凋亡之火
-			AstraBlade: 凋亡尖碑
-			AstrageldonLaser: 凋亡光束
-			AstrageldonFlamethrower: 凋亡之焱
+		Projectiles: {
+			IntergelacticMinionOrbitingRocks.DisplayName: 星环屏障
+			AsteroidBusterProj.DisplayName: 星辉灾星
+			AsteroidBusterExplosion.DisplayName: 星辉灾星
+			NebulaSpear.DisplayName: 超空间长枪
+			Astralpod.DisplayName: 星辉水母
+			AstralpodBullet.DisplayName: 辐射光弹
+			PlayerNebula.DisplayName: 暴烈星云
+			AstrageldonStar.DisplayName: 凋亡辉星
+			AstrageldonStar2.DisplayName: 凋亡辉星
+			AstrageldonStar3.DisplayName: 凋亡辉星
+			AstrageldonStar4.DisplayName: 凋亡辉星
+			AstraRock.DisplayName: 凋亡之石
+			HostileAsteroid.DisplayName: 凋亡星环
+			NebulaResidue.DisplayName: 凋亡残骸
+			NebulaResidueHB.DisplayName: 凋亡残骸
+			SlimerSpear.DisplayName: 新星长矛
+			SpiralLaser.DisplayName: 凋亡漩涡
+			StarLaser.DisplayName: 凋亡之火
+			AstraBlade.DisplayName: 凋亡尖碑
+			AstrageldonLaser.DisplayName: 凋亡光束
+			AstrageldonFlamethrower.DisplayName: 凋亡之焱
+			BreathofGlaciesFlamethrower.DisplayName: 冰川之焰
+			DesertScorcherDrop.DisplayName: 灼烧弹
+			IchorthrowerFlame.DisplayName: 火灼灵液
+			IchorthrowerBubbleM.DisplayName: 灵液泡
+			IchorthrowerBubbleS.DisplayName: 灵液泡
+			NovaBeam.DisplayName: 新星激光
+			NovaFlame.DisplayName: 新星火焰
+			NovaGlobe.DisplayName: 超新星炸弹
+			PlasmilegionFireball.DisplayName: 等离子爆破
+			PlasmilegionFlamethrower.DisplayName: 等离子集束焰
+			PlasmilegionCalamityLaser.DisplayName: 等离子集束焰激光
+			RepentanceFlamethrower.DisplayName: 忏悔
+			RepentanceForwardFireball.DisplayName: 忏悔
+			RepentanceCircle.DisplayName: 忏悔
+			RookOfVengeanceMFireball.DisplayName: 无序堡垒
+			RookOfVengeanceMFireballSpin.DisplayName: 无序堡垒
+			RookOfVengeanceMFireballBlast.DisplayName: 无序堡垒
+			CuteSandstoneShark.DisplayName: 鲨鲨！
+			BlossomDriftingLeaf.DisplayName: 飞英
+			BlossomBuffLeaf.DisplayName: 佑芳
+			BlossomsBlessingProjectile.DisplayName: 芳簇之祝
+			CatharsisProjectile.DisplayName: 宣泄
+			HighCatharsis.DisplayName: 宣泄
+			CoralCrusherProjectile.DisplayName: 珊瑚粉碎者
+			CoralCrusherShard.DisplayName: 珊瑚粉碎者
+			CongeledCrimsonProjectile.DisplayName: 胶联双鞭
+			CongeledCorruptProjectile.DisplayName: 胶联双鞭
+			PrismBreakProjectile.DisplayName: 碎晶
+			ResonantStrikerProjectile.DisplayName: 谐鸣振爆索
+			SandstoneReignsProjectile.DisplayName: 怒砂暴君
+			SharkSandSplash.DisplayName: 鲨咬
+			UnderbiteProjectile.DisplayName: 伏蛰
+			UnderbiteSkull.DisplayName: 伏蛰之颅
+			UnrelentingTormentProjectile.DisplayName: 恒怨之刑
+			UnrelentingTormentHands.DisplayName: 酷刑之手
+			UnrelentingTormentSoul.DisplayName: 不死之魂
+			ElectricStomp.DisplayName: 雷霆之踏
+			AsteroidBuster.DisplayName: Mods.CatalystMod.ProjectileName.AsteroidBuster
+			// AstrageldonSpawner.DisplayName: Astrageldon Spawner
+			NebulaSphere.DisplayName: 超新星云雾
+			WulfrumMineExplosion.DisplayName: 钨钢爆炸
+			IntergelacticLaser.DisplayName: 星凝射线
+			IntergelacticStar.DisplayName: 星凝陨星
+			// NebulaHitbox.DisplayName: Nebula Hitbox
+			AsteroidBusterProjS.DisplayName: 星辉灾星
+			AstrageldonPet.DisplayName: 史莱姆星灵
+			AstragelgunFlamethrower.DisplayName: 等离子球
+			AstragelgunProj.DisplayName: 超新星炸弹
+			BreathofGlaciesIceShards.DisplayName: 冰碎片
+			BreathofGlaciesProj.DisplayName: 冰川之息
+			BreathofGlaciesRunes.DisplayName: 冰川之息符文
+			DesertScorcherEnemySplash.DisplayName: 水花
+			DesertScorcherProj.DisplayName: 荒漠之灼
+			DesertScorcherSpray.DisplayName: 荒漠之灼
+			DesertScorcherTileSplash.DisplayName: 水柱
+			IchorthrowerProj.DisplayName: 灵液发射器
+			IchorthrowerSplashM.DisplayName: 大灵液球
+			IchorthrowerSplashS.DisplayName: 小灵液球
+			PlasmilegionProj.DisplayName: 等离子集束焰
+			RepentanceProj.DisplayName: 忏悔
+			RookOfVengeanceProj.DisplayName: 无序堡垒
+			StaticInfernoFlamethrower.DisplayName: 等离子焰
+			StaticInfernoFlamethrowerOrb.DisplayName: 赤红电球
+			StaticInfernoProj.DisplayName: 赤电炎风
+			MiniStar.DisplayName: 微型矮星
+			StarSpawner.DisplayName: 唤星者
+			AstralRocksRogueShot.DisplayName: 凋亡石块
+			InterstellarVolutionProj.DisplayName: 凝旋星刃
+			InterstellarVolutionSlimer.DisplayName: 裂星史莱姆
+			InterstellarVolutionSlimerBullet.DisplayName: 裂星史莱姆激光
+			WulfrumMineExplosionNobreak.DisplayName: 钨钢爆炸
+			WulfrumSatchelChargeProj.DisplayName: 充能钨钢炸药包
+			AstralpodLaser.DisplayName: 死亡光线
+			AstralpodMinion.DisplayName: 星辉水母
+			IntergelacticMinionRockShot.DisplayName: 凋亡石块
+			CatharsisSpawner.DisplayName: 宣泄
+			CatharsisSplash.DisplayName: 鲜血爆燃
+			HighCatharsisDown.DisplayName: 宣泄
+			HighCatharsisUp.DisplayName: 宣泄
+			DevouringBlackhole.DisplayName: 暗熵黑洞
+			DuoWhipSpawner.DisplayName: 胶联双鞭
+			PrismBreakHoming.DisplayName: 追踪海晶碎片
+			PrismBreakShard.DisplayName: 海晶碎片
+			ResonantStrikerOrb.DisplayName: 追踪电球
+			SerpentsTongueProjectile.DisplayName: 巨蛇
+			UnrelentingTormentSpawner.DisplayName: 恒怨之刑
+			AstralRocksProj.DisplayName: 凋亡石块
+			FlashlightConeFriendly.DisplayName: 手电筒光锥
+			FlashlightProj.DisplayName: 钨钢手电筒
+			GelSpray.DisplayName: 凝胶喷雾
+			GoozmaBall.DisplayName: 古泽玛球
+			AstralLashProj.DisplayName: 末星之鞭
+			ScytheoftheAbandonedGod.DisplayName: 旧神星镰
+			ScytheoftheAbandonedGodShot.DisplayName: 追踪凝胶球
 		}
 
 		AuricTeslaPlusSet: {
 			Melee:
 				'''
 				近战异宇星凝、血炎和弑神者的套装奖励
+				按下{0}键，可使星环透明化
 				敌人更有可能以你为目标
 				弹幕击中敌人时生成圣金源光球治疗玩家
 				'''
 			Ranged:
 				'''
 				远程异宇星凝、血炎和弑神者的套装奖励
+				按下{0}键，可使星环透明化
 				弹幕击中敌人时生成圣金源光球治疗玩家
 				'''
 			Magic:
 				'''
 				魔法异宇星凝、血炎和始源林海的套装奖励
+				按下{0}键，可使星环透明化
 				弹幕击中敌人时生成圣金源光球治疗玩家
 				最大速度和加速度增加5%
 				'''
 			Summoner:
 				'''
 				召唤异宇星凝、血炎和始源林海的套装奖励
+				按下{0}键，可使星环透明化
 				弹幕击中敌人时生成圣金源光球治疗玩家
 				最大速度和加速度增加5%
 				增加6个仆从栏位，提高75%召唤伤害
@@ -278,6 +855,7 @@ Mods: {
 			Rogue:
 				'''
 				盗贼异宇星凝、血炎和弑神者的套装奖励
+				按下{0}键，可使星环透明化
 				弹幕击中敌人时生成圣金源光球治疗玩家
 				不攻击时累积潜行值，移动时积累较慢，最大130点
 				一旦你的潜行值满，下一次盗贼攻击可施展潜伏攻击
@@ -286,60 +864,121 @@ Mods: {
 				'''
 		}
 
-		ItemTooltipExtra: {
-			InfluxCluster:
-				'''
-				按下{0}键，将自身化为暴烈星云，向光标冲刺
-				冲刺时，你免疫所有伤害
-				冷却时间为{1}秒
-				'''
+		ItemTooltipExtra.InfluxCluster:
+			'''
+			按下{0}键，将自身化为暴烈星云，向光标冲刺
+			冲刺时，你免疫所有伤害
+			冷却时间为{1}秒
+			'''
+		Cooldowns.InfluxDash: 凝涌星核冷却
+
+		Tiles: {
+			AstralTransmogrifier.MapEntry: 星辉熔铸台
+
+			IntergelacticChest: {
+				MapEntry: 宝箱
+				ContainerName: 星凝宝箱
+			}
+
+			IntergelacticDoor.MapEntry: 门
+
+			IntergelacticDresser: {
+				MapEntry: 梳妆台
+				ContainerName: 星凝梳妆台
+			}
+
+			BossTrophy.MapEntry: 纪念章
+			EnemyBanners.MapEntry: 旗帜
+			AstralNeutronPlaced.MapEntry: 画
+			IntergelacticBathtub.MapEntry: 浴缸
+			IntergelacticBed.MapEntry: 床
+			IntergelacticBookshelf.MapEntry: 书架
+			IntergelacticCandelabra.MapEntry: 烛台
+			IntergelacticCandle.MapEntry: 蜡烛
+			IntergelacticChair.MapEntry: 椅子
+			IntergelacticChandelier.MapEntry: 吊灯
+			IntergelacticClock.MapEntry: 钟
+			IntergelacticLamp.MapEntry: 灯
+			IntergelacticLantern.MapEntry: 灯笼
+			IntergelacticPiano.MapEntry: 钢琴
+			IntergelacticSink.MapEntry: 水槽
+			IntergelacticSofa.MapEntry: 沙发
+			IntergelacticTable.MapEntry: 桌子
+			IntergelacticToilet.MapEntry: 马桶
+			IntergelacticWorkbench.MapEntry: 工作台
+			MetanovaOre.MapEntry: 辉恒星矿
+			IntergelacticDoorOpen.MapEntry: 门
 		}
 
-		Cooldowns: {
-			InfluxDash: 凝涌星核冷却
-		}
+		Buffs: {
+			AstrogelJumpBoost: {
+				DisplayName: 辉星凝胶
+				Description: 大大增加跳跃速度
+			}
 
-		MapObject: {
-			AstralTransmogrifier: 星辉熔铸台
-			IntergelacticChest: 星凝宝箱
-			IntergelacticDoor: 星凝门
-			IntergelacticDresser: 星凝梳妆台
-			MusicBoxes: 音乐盒
-			BossTrophy: 纪念章
-			EnemyBanners: 旗帜
-			AstralNeutronPlaced: 中子星辉
-		}
+			AstrageldonRocksSetbonus: {
+				DisplayName: 星环屏障
+				Description: 一圈小行星保护着你
+			}
 
-		Containers: {
-			IntergelacticChest: 星凝宝箱
-			IntergelacticDresser: 星凝梳妆台
-		}
+			AstralJellyBuff: {
+				DisplayName: 幻星凝露
+				Description: 增加最大魔力值和魔力恢复速度
+			}
 
-		BuffName: {
-			AstrogelJumpBoost: 辉星凝胶
-			AstrageldonRocksSetbonus: 星环屏障
-			AstralJellyBuff: 幻星凝露
-			ZeroGravity: 零重力
-			AstralpodBuff: 星辉水母
-			AstralBlight: 星辉凋亡
-			InterstellarCorruption: 群星之蚀
-			AstrageldonPetBuff: 史莱姆星灵
-		}
+			ZeroGravity: {
+				DisplayName: 零重力
+				Description: 获得无限的飞行时间
+			}
 
-		BuffDescription: {
-			AstrogelJumpBoost: 大大增加跳跃速度
-			AstrageldonRocksSetbonus: 一圈小行星保护着你
-			AstralJellyBuff: 增加最大魔力值和魔力恢复速度
-			ZeroGravity: 获得无限的飞行时间
-			AstralpodBuff: 星辉水母会保护你
-			AstralBlight: 你的血肉气化了
-			InterstellarCorruption:
-				'''
-				空间中的扭曲能量环绕在你周围
-				你获得混沌状态减益的瞬间便会化为齑粉
-				'''
+			AstralpodBuff: {
+				DisplayName: 星辉水母
+				Description: 星辉水母会保护你
+			}
 
-			AstrageldonPetBuff: 祂就是吞噬一切之物
+			AstralBlight: {
+				DisplayName: 星辉凋亡
+				Description: 你的血肉气化了
+			}
+
+			InterstellarCorruption: {
+				DisplayName: 群星之蚀
+				Description:
+					'''
+					空间中的扭曲能量环绕在你周围
+					你获得混沌状态减益的瞬间便会化为齑粉
+					'''
+			}
+
+			AstrageldonPetBuff: {
+				DisplayName: 史莱姆星灵
+				Description: 祂就是吞噬一切之物
+			}
+
+			BlessedBlossoms: {
+				DisplayName: 芳簇之祝
+				Description: 获得强大的荆棘效果，提高生命恢复速度
+			}
+
+			ReverberatingParalysis: {
+				DisplayName: 反响瘫痪
+				Description: 被闪电眩晕
+			}
+
+			DefaultTag: {
+				DisplayName: 标记
+				Description: 被鞭子标记
+			}
+
+			CatharsisBuff: {
+				DisplayName: 鲜血爆燃
+				Description: 以血还血……
+			}
+
+			CatharsisBuff2: {
+				DisplayName: 殷红神性
+				Description: 血卷残云……
+			}
 		}
 
 		CommonTooltip: {
@@ -352,14 +991,22 @@ Mods: {
 			FlawlessDrop: - 无伤战利品 -
 			NotConsumable: 不消耗
 			ClentaminatorSolution: 由环境改造枪使用
+			WhipTooltip: 你的召唤物将集中攻击被打中的敌人
+			Flamethrower: 将凝胶用作弹药
+			LensTooltip: 更改手电筒的颜色
+			LegendaryChallengeDrop: Mods.CatalystMod.Tooltips.LegendaryChallengeDrop
 		}
 
 		Announcement: {
-			AstrageldonLocked: 末世星之奇点遗世而去……
+			AstrageldonLocked:
+				'''
+				星辉发讯器核心破碎……
+				末世星之奇点遗世而去……
+				'''
 			AstralTreasures: 星辉洞穴中的宝藏发出了淡淡星光！
 			HasAwakened: "{0}已苏醒！"
 			AstrageldonKilledImproperly: 你触发了一个不常见的bug……重新召唤这个Boss并击败它，获取它的战利品吧！
-			Bug: 记得把bug报告给灾劫Mod开发组（或是汉化补丁作者），我们会修复它！
+			Bug: 记得把bug报告给灾劫Mod开发组，我们会修复它！
 		}
 
 		WorldGen: {
@@ -379,6 +1026,18 @@ Mods: {
 				开关某些特殊稀有度的文字闪烁效果。
 				开启后某些文本可能难以阅读。
 				'''
+			CatharsisBarX: 宣泄充能条水平位置
+			CatharsisBarY: 宣泄充能条竖直位置
+			CatharsisXTooltip: 宣泄的鲜血充能条的水平位置，以你屏幕宽度的百分比为衡量标准。
+			CatharsisYTooltip: 宣泄的鲜血充能条的竖直位置，以你屏幕高度的百分比为衡量标准。
+			discordRichPresence: Mods.CatalystMod.ClientConfig.discordRichPresence
+			discordRichPresenceTooltip: Mods.CatalystMod.ClientConfig.discordRichPresenceTooltip
+			ExtraFlashyExpertText: Mods.CatalystMod.ClientConfig.ExtraFlashyExpertText
+			ExtraFlashyExpertTextTooltip: Mods.CatalystMod.ClientConfig.ExtraFlashyExpertTextTooltip
+			TextSparklesLabel: "[i:3459] 文字闪烁"
+			SulphurousSeaCustomBGLabel: "[i:6738] 新的硫磺海背景"
+			CatharsisBarXLabel: "[i:7637] 宣泄充能条水平位置"
+			CatharsisBarYLabel: "[i:7637] 宣泄充能条竖直位置"
 		}
 
 		TitleIcon: {
@@ -390,42 +1049,107 @@ Mods: {
 		}
 
 		Bestiary: {
-			Astrageldon: 拥有神之力量、穿越在维度之间的史莱姆。作为星辉凋亡的前导，它在追求质量的过程中吸收了它原先的整个宇宙。
-			NovaSlime: 从末世星史莱姆身上分离出来的一小块碎片。新星史莱姆本身拥有巨大的能量，但它的质量不足以维持自身的稳定。
-			NovaSlimer: 一个高密度的星辉凝胶球，拥有耐用且锋利、足以撕裂维度的锋刃。当它们被高速发射时，现实都会被其撕裂。
-			AscendedAstralSlime: 由纯能量构成的星凝胶体，来自被一个具有神力的史莱姆毁灭的宇宙。它们的核心是一块带有共振辉星珠的外星石头。
-			MetanovaSlime: 末世星史莱姆的寂灭使星辉洞穴中充满了闪闪发光的外星岩石。辉恒星史莱姆吸收了这些石头的小碎片，构建出轻巧耐用的装甲。
+			Astrageldon: 拥有神之力量、穿越在维度之间的史莱姆。 作为星辉凋亡的前导，它在追求质量的过程中吸收了它原先的整个宇宙。
+			NovaSlime: 从末世星史莱姆身上分离出来的一小块碎片。 新星史莱姆本身拥有巨大的能量，但它的质量不足以维持自身的稳定。
+			NovaSlimer: 一个高密度的星辉凝胶球，嵌入耐用且锋利、足以撕裂维度的锋刃。 当它们被高速发射时，现实之构都会被其撕裂。
+			AscendedAstralSlime: 来自另一个宇宙的由纯能量构成的星凝胶体。 它们的核心是一块带有共振辉星珠的外星石头。
+			MetanovaSlime: 末世星史莱姆的寂灭使星辉洞穴中充满了闪闪发光的外星岩石。 这些史莱姆吸收了这些石头的小碎片，构建出可操纵的、轻巧耐用的装甲。
+			WulfrumSlime: 当敌对目标靠近时，这些机器会释放内部储存的凝胶，使它们变得更大，并在自身周围释放一个能量力场。 凝胶的强导电性和冷却性让这些“史莱姆”是阻止护盾发生器落入坏人之手的最佳选择。
+			WulfrumMine: 一个原型造物，在完成前就已被废弃。 钨钢诡雷本是为了实现其它钨钢构造的功能而设计的，然而，它唯一擅长的事情只有用猛烈的爆炸蒸发范围内的一切。
 		}
 
-		NPCName: {
-			Astrageldon: 末世星史莱姆
-			NovaSlime: 新星史莱姆
-			NovaSlimer: 裂星史莱姆
-			AscendedAstralSlime: 星极史莱姆
-			MetanovaSlime: 辉恒星史莱姆
-			MetanovaSlimeRocks: 辉恒星史莱姆
+		NPCs: {
+			Astrageldon: {
+				DisplayName: 末世星史莱姆
+
+				BossChecklistIntegration: {
+					SpawnInfo: 在星辉瘟疫生物群落使用 [i:CatalystMod/AstralCommunicator] 召唤
+					DespawnMessage: "[c/db5ed2:来自平行宇宙的骇宇巨物继续着它吞噬万物的征途。]"
+				}
+			}
+
+			NovaSlime.DisplayName: 新星史莱姆
+			NovaSlimer.DisplayName: 裂星史莱姆
+			WulfrumSlime.DisplayName: 钨钢史莱姆
+			WulfrumMine.DisplayName: 钨钢诡雷
+			AscendedAstralSlime.DisplayName: 星极史莱姆
+			MetanovaSlime.DisplayName: 辉恒星史莱姆
+			MetanovaSlimeRocks.DisplayName: 辉恒星史莱姆
+			ArmoredAstralSlime.DisplayName: 装甲幻星史莱姆
+			AstrageldonSlimer.DisplayName: 辉星史莱姆
+			AstrageldonSlime.DisplayName: 末星史莱姆
 		}
 
-		BossChecklistDesc: {
-			Astrageldon: 在星辉瘟疫生物群落使用[i:{0}] 召唤
-		}
-
-
-		DropCondition: {
-			Flawless: 无伤击败后掉落
-		}
+		DropCondition.Flawless: 无伤击败时掉落
 
 		DeathMessage: {
 			InterstellarCorruption: 被空间裂缝吞噬了……
+			CatharsisDeath: 肝肠寸断。
 		}
 
 		AstrageldonMainMenu: 末世星史莱姆风格
-		AstrageldonAntiCheat: 
+		AstrageldonAntiCheat:
 			'''
 			默认你是无意的
 			你都这么玩了，别找我们吐槽平衡性问题了
 			打无伤也别这么召唤
 			'''
-		## BCL: 来自平行宇宙的骇宇巨物继续着它吞噬万物的征途
+
+		Keybinds: {
+			InfluxCluster: 灾劫：凝涌星核冲刺
+			ToggleVisibility: 灾劫：开关异宇星凝套装星环可见性
+			"Influx Cluster.DisplayName": 凝涌星核
+			"Toggle Intergelactic Setbonus Visibility.DisplayName": 异宇星凝套装星环可见性
+		}
+
+		+ItemTooltip.IntergelacticHornedHelmet: Mods.CatalystMod.+ItemTooltip.IntergelacticHornedHelmet
+
+		Error: {
+			BossChecklist: Mods.CatalystMod.Error.BossChecklist
+			DiscordRichPresence: Mods.CatalystMod.Error.DiscordRichPresence
+			Mysterious: Mods.CatalystMod.Error.Mysterious
+			ReportBugs: Mods.CatalystMod.Error.ReportBugs
+		}
+
+		Biomes: {
+			AstrageldonBiome: {
+				DisplayName: 星末瘟疫
+				TownNPCDialogueName: 星末瘟疫
+			}
+		}
+
+		Configs: {
+			CatalystClientConfig: {
+				DisplayName: "{$Mods.CatalystMod.ClientConfig.Name}"
+
+				textSparkles: {
+					Label: "{$Mods.CatalystMod.ClientConfig.TextSparklesLabel}"
+					Tooltip: "{$Mods.CatalystMod.ClientConfig.TextSparklesTooltip}"
+				}
+
+				CatharsisBarX: {
+					Label: "{$Mods.CatalystMod.ClientConfig.CatharsisBarX}"
+					Tooltip: "{$Mods.CatalystMod.ClientConfig.CatharsisXTooltip}"
+				}
+
+				CatharsisBarY: {
+					Label: "{$Mods.CatalystMod.ClientConfig.CatharsisBarY}"
+					Tooltip: "{$Mods.CatalystMod.ClientConfig.CatharsisYTooltip}"
+				}
+			}
+		}
+
+		MusicDisplay: {
+			SongNames: {
+				AstrageldonTitle: 来自地狱的天堂之礼
+				AstrageldonPhase1: 宙极之恶
+				AstrageldonPhase2: 天河荒溃
+			}
+
+			Authors: {
+				DMDOKURO: 由 DM DOKURO 创作
+				HeartPlusUp: 由 Heart Plus Up! 创作
+			}
+		}
 	}
 }

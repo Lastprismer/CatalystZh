@@ -1,5 +1,5 @@
-displayName = 灾劫Mod汉化补丁
+displayName = 灾劫Mod中文补丁
 author = Last prismer
-version = 1.1.0.4000
+version = 1.1.2.0
 modReferences = CalamityMod, CatalystMod
 side = Client

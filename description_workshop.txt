@@ -1,8 +1,7 @@
-This is a Chinese-translation patch for Catalyst Mod.
-
 -= 介绍 =-
-由于灾劫内置汉化和Mod本体版本错位，暂时制作这个补丁包。
-补丁包中所有更新的汉化内容将在灾劫下一个版本中加入。
+由于灾劫mod在中文方面适配不完善，制作此mod来进行一些优化和修复
+
+[b]若您对本mod有任何疑问或建议，可私聊Catalyst Mod Discord 的 Lastprismer，或者加入QQ群：317092111。[i]本页面的评论区不！是！进行问题反馈的场所。[/i][/b]
 
 -= 使用方法 =-
 1.同时订阅灾厄Mod、灾劫Mod和本Mod
@@ -10,8 +9,8 @@ This is a Chinese-translation patch for Catalyst Mod.
 3.安装完成，进行游戏
 
 -= Credits 鸣谢 =-
-Catalyst Dev Team || 灾劫Mod制作组
-卡顿修复和其他技术支持：-Cyril-
+技术支持：-Cyril-
 图标：陌林
 
-For the source code, check [url=https://github.com/Lastprismer/CatalystZh] here [/url].
+源码请参见 [url=https://github.com/Lastprismer/CatalystZh] 此处 [/url]。
+[quote=tModLoader]Developed By Last prismer[/quote]

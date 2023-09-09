@@ -8,11 +8,20 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <AdditionalFiles Remove="obj\**" />
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="CalamityMod">
+      <HintPath>..\CalamityMod\bin\Debug\net6.0\CalamityMod.dll</HintPath>
+    </Reference>
     <Reference Include="CatalystMod">
-      <HintPath>..\CatalystMod.dll</HintPath>
+      <HintPath>..\CatalystMod\bin\Debug\net6.0\CatalystMod.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
